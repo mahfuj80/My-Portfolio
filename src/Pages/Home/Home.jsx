@@ -1,7 +1,11 @@
+import Footer from '../../Components/Shared/Footer/Footer';
+import Nav from '../../Components/Shared/Nav/Nav';
+
 const Home = () => {
   return (
-    <div>
-      <h1>This is Home Page</h1>
+    <div className="container mx-auto">
+      <Nav></Nav>
+      <Footer></Footer>
     </div>
   );
 };
