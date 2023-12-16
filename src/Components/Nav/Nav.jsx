@@ -1,18 +1,17 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import DarkWhite from '../DarkWhiteTheme/DarkWhite';
 
 const Nav = () => {
   const navItems = (
     <>
-      <li className="mr-2">
-        <NavLink to={'#projects'}>Projects</NavLink>
+      <li className="mr-2 font-bold text-base">
+        <Link to={'#projects font-bold'}>Projects</Link>
       </li>
-      <li className="mr-2">
-        <NavLink to={'#contact'}>Contact</NavLink>
+      <li className="mr-2 font-bold text-base">
+        <Link to={'#contact'}>Skills</Link>
       </li>
-
-      <li className="">
-        <NavLink to={''}>Item 3</NavLink>
+      <li className="font-bold text-base">
+        <Link to={''}>Contact</Link>
       </li>
     </>
   );
@@ -44,9 +43,9 @@ const Nav = () => {
               {navItems}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <Link to={'/'} className="btn btn-ghost text-xl">
             <img src="/fab.png" className="h-12 py-2"></img>
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navItems}</ul>
@@ -55,7 +54,14 @@ const Nav = () => {
           <div className="mr-2">
             <DarkWhite></DarkWhite>
           </div>
-          <a className="btn">Download Resume</a>
+          <button
+            type="button"
+            className="btn text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-600  hover:to-green-500"
+          >
+            <a href="/logo.png" download="Mahfujur_Rahman_Resume">
+              Download Resume
+            </a>
+          </button>
         </div>
       </nav>
     </>
