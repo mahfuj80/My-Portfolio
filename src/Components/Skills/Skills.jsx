@@ -1,8 +1,13 @@
+import SectionTitle from '../SectionTitle/SectionTitle';
+import skills from './SkillsData/skillsData';
+
 const Skills = () => {
+  console.log(skills);
   return (
-    <div className="px-4">
-      <h1>This is Skills Page</h1>
-    </div>
+    <section className="px-4">
+      <SectionTitle title={'Skills'} border={'---------------'}></SectionTitle>
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-4"></div>
+    </section>
   );
 };
 

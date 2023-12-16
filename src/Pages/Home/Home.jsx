@@ -10,9 +10,9 @@ const Home = () => {
     <div className="container mx-auto mt-[72px]">
       <Nav></Nav>
       <Banner></Banner>
+      <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
-      <Skills></Skills>
       <Footer></Footer>
     </div>
   );
