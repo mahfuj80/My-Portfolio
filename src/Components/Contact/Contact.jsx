@@ -11,9 +11,12 @@ const Contact = () => {
 
   const { View } = useLottie(options);
   return (
-    <section className="px-4">
-      <SectionTitle title={'Contact Me'}></SectionTitle>
-      <div className="flex flex-col md:flex-row">
+    <section className="px-4 rounded-lg">
+      <SectionTitle
+        title={'Contact Me'}
+        border={'------------------------'}
+      ></SectionTitle>
+      <div className="flex flex-col md:flex-row shadow-2xl p-4 bg-gradient-to-r from-cyan-500 to-blue-500  rounded-lg">
         <div className="flex-1">
           <label
             htmlFor="website-admin"
@@ -63,7 +66,7 @@ const Contact = () => {
             <input
               type="text"
               id="input-group-1"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white px-2 dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="yourName@gmail.com"
             />
           </div>
@@ -83,7 +86,7 @@ const Contact = () => {
           <div className="text-center mt-4">
             <button
               type="button"
-              className="btn bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 text-white py-2"
+              className="btn bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 text-white py-2 border-none"
             >
               Send Message
             </button>

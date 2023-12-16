@@ -14,12 +14,12 @@ const Banner = () => {
       >
         <div className="hero-overlay bg-opacity-80"></div>
         <div
-          className="hero-content flex-col lg:flex-row justify-between"
+          className="hero-content flex-col md:flex-row justify-between"
           // style={{
           //   backgroundImage: 'url(/t.png)',
           // }}
         >
-          <div className="w-1/2 mx-auto text-center  md:pl-8">
+          <div className="md:w-1/2 w-[90%] mx-auto text-center  md:pl-8">
             <h1 className="text-5xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">
               Mahfujur Rahman
             </h1>
@@ -52,7 +52,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="w-1/2 mx-auto ">
+          <div className="md:w-1/2 w-[90%] mx-auto ">
             <img
               src={Profile}
               className="rounded-2xl mask mask-hexagon w-fit mx-auto"
