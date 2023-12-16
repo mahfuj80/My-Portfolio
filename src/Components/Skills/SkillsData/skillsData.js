@@ -20,34 +20,51 @@ import tailwind from '../../../assets/icons/tailwind.png';
 const skills = [
   {
     id: 1,
-    name: 'Arduino',
-    image: arduino,
+    name: 'React',
+    image: react,
   },
   {
     id: 2,
-    name: 'Bootstrap',
-    image: bootstrap,
+    name: 'Tailwind',
+    image: tailwind,
   },
   {
-    id: 3,
-    name: 'C',
-    image: c,
-  },
-  {
-    id: 5,
-    name: 'C++',
-    image: cpp,
-  },
-  {
-    id: 6,
-    name: 'CSS',
-    image: css,
+    id: 13,
+    name: 'MongoDB',
+    image: mongo,
   },
   {
     id: 7,
     name: 'Express JS',
     image: express,
   },
+  {
+    id: 15,
+    name: 'Node',
+    image: node,
+  },
+  {
+    id: 12,
+    name: 'Java Script',
+    image: javaScript,
+  },
+  {
+    id: 11,
+    name: 'HTML',
+    image: html,
+  },
+  {
+    id: 6,
+    name: 'CSS',
+    image: css,
+  },
+
+  {
+    id: 2,
+    name: 'Bootstrap',
+    image: bootstrap,
+  },
+
   {
     id: 8,
     name: 'Figma',
@@ -64,39 +81,15 @@ const skills = [
     image: git,
   },
   {
-    id: 11,
-    name: 'HTML',
-    image: html,
-  },
-  {
-    id: 12,
-    name: 'Java Script',
-    image: javaScript,
-  },
-  {
-    id: 13,
-    name: 'MongoDB',
-    image: mongo,
-  },
-  {
     id: 14,
     name: 'NextJs',
     image: nextJs,
   },
-  {
-    id: 15,
-    name: 'Node',
-    image: node,
-  },
+
   {
     id: 16,
     name: 'Python',
     image: python,
-  },
-  {
-    id: 17,
-    name: 'React',
-    image: react,
   },
   {
     id: 18,
@@ -104,9 +97,20 @@ const skills = [
     image: selenium,
   },
   {
-    id: 19,
-    name: 'Tailwind',
-    image: tailwind,
+    id: 3,
+    name: 'C',
+    image: c,
+  },
+  {
+    id: 5,
+    name: 'C++',
+    image: cpp,
+  },
+  {
+    id: 17,
+
+    name: 'Arduino',
+    image: arduino,
   },
 ];
 

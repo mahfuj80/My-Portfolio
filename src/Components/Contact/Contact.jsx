@@ -11,7 +11,7 @@ const Contact = () => {
 
   const { View } = useLottie(options);
   return (
-    <section className="px-4 rounded-lg">
+    <section className="px-4 rounded-lg mb-12">
       <SectionTitle
         title={'Contact Me'}
         border={'------------------------'}
