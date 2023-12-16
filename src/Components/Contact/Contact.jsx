@@ -1,8 +1,11 @@
 import { useLottie } from 'lottie-react';
 import contactAnimation from '../../assets/contactAnimation.json';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 const Contact = () => {
+  const socialDescription =
+    "I'm on the hunt for new opportunities—check the links below! Reach out for job offers and professional connections. Let's build success together.";
   // For Lottie Animation
   const options = {
     animationData: contactAnimation,
@@ -11,12 +14,12 @@ const Contact = () => {
 
   const { View } = useLottie(options);
   return (
-    <section id="contact" className="px-4 rounded-lg mb-12">
+    <section id="contact" className="px-4 mb-12">
       <SectionTitle
         title={'Contact Me'}
         border={'------------------------'}
       ></SectionTitle>
-      <div className="flex flex-col-reverse gap-4 md:flex-row shadow-2xl p-4 bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black  rounded-lg">
+      <div className="flex flex-col-reverse rounded-t-lg gap-4 md:flex-row p-4 bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black ">
         <div className="flex-1 md:ml-8 mt-8">
           <label
             htmlFor="website-admin"
@@ -93,6 +96,41 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex-1">{View}</div>
+      </div>
+      {/* Social Links Sections */}
+      <div className="w-full text-center  py-8 bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black rounded-b-lg">
+        <h5 className="mb-2 text-3xl font-bold text-white ">
+          Connect with me on socials!
+        </h5>
+        <p className="mb-5 text-base text-gray-300 sm:text-lg dark:text-gray-100 md:w-[80%] md:mx-auto ">
+          {socialDescription}
+        </p>
+        <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+          <a
+            href="#"
+            className="w-full sm:w-auto bg-gray-300 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 text-4xl text-blue-600"
+          >
+            <FaFacebook></FaFacebook>
+          </a>
+          <a
+            href="#"
+            className="w-full sm:w-auto bg-gray-300 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 text-4xl text-black hover:text-white"
+          >
+            <FaGithub></FaGithub>
+          </a>
+          <a
+            href="#"
+            className="w-full sm:w-auto bg-gray-300 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 text-4xl text-blue-600"
+          >
+            <FaLinkedinIn></FaLinkedinIn>
+          </a>
+          <a
+            href="#"
+            className="w-full sm:w-auto bg-gray-300 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 text-4xl text-blue-600"
+          >
+            <FaTwitter></FaTwitter>
+          </a>
+        </div>
       </div>
     </section>
   );
