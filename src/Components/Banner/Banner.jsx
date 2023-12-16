@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section className="px-4 rounded-lg mb-12">
       <div
-        className="hero min-h-screen"
+        className="hero min-h-screen lg:min-h-[60vh]"
         style={{
           backgroundImage: 'url(/Banner-bg.gif)',
         }}

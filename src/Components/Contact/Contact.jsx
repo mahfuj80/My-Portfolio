@@ -11,13 +11,13 @@ const Contact = () => {
 
   const { View } = useLottie(options);
   return (
-    <section className="px-4 rounded-lg mb-12">
+    <section id="contact" className="px-4 rounded-lg mb-12">
       <SectionTitle
         title={'Contact Me'}
         border={'------------------------'}
       ></SectionTitle>
       <div className="flex flex-col-reverse gap-4 md:flex-row shadow-2xl p-4 bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black  rounded-lg">
-        <div className="flex-1">
+        <div className="flex-1 md:ml-8 mt-8">
           <label
             htmlFor="website-admin"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"

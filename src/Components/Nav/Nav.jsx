@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import DarkWhite from '../DarkWhiteTheme/DarkWhite';
 
 const Nav = () => {
