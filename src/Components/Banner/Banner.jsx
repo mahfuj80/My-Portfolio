@@ -13,12 +13,7 @@ const Banner = () => {
         }}
       >
         <div className="hero-overlay bg-opacity-80"></div>
-        <div
-          className="hero-content flex-col md:flex-row justify-between"
-          // style={{
-          //   backgroundImage: 'url(/t.png)',
-          // }}
-        >
+        <div className="hero-content flex-col-reverse md:flex-row justify-between pt-12 pb-16">
           <div className="md:w-1/2 w-[90%] mx-auto text-center  md:pl-8">
             <h1 className="text-5xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">
               Mahfujur Rahman
@@ -61,8 +56,8 @@ const Banner = () => {
         </div>
       </div>
       {/* Stats */}
-      <div className="flex flex-col md:flex-row gap-4 justify-center bg-gray-700 py-4 md:w-[90%] mx-auto px-4 rounded-lg -mt-12 z-20">
-        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex flex-col md:flex-row gap-4 justify-center bg-gray-700 py-4 md:w-[90%] mx-auto px-4 rounded-lg -mt-12 items-center">
+        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 z-10">
           <svg
             className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
             aria-hidden="true"
@@ -103,7 +98,7 @@ const Banner = () => {
             </svg>
           </a>
         </div>
-        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 z-10">
           <svg
             className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
             aria-hidden="true"
@@ -144,7 +139,7 @@ const Banner = () => {
             </svg>
           </a>
         </div>
-        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 z-10">
           <svg
             className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
             aria-hidden="true"

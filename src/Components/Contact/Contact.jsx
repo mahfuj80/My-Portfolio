@@ -16,7 +16,7 @@ const Contact = () => {
         title={'Contact Me'}
         border={'------------------------'}
       ></SectionTitle>
-      <div className="flex flex-col-reverse gap-4 md:flex-row shadow-2xl p-4 bg-gradient-to-r from-cyan-500 to-blue-500  rounded-lg">
+      <div className="flex flex-col-reverse gap-4 md:flex-row shadow-2xl p-4 bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black  rounded-lg">
         <div className="flex-1">
           <label
             htmlFor="website-admin"
