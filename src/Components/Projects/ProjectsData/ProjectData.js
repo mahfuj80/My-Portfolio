@@ -52,7 +52,7 @@ const projects = [
     liveLink: 'https://skillswapr-a11.web.app/',
     GithubLink: 'https://github.com/mahfuj80/SkillSwapr-client-a11',
     serverLink: 'https://github.com/mahfuj80/SkillSwapr-server-a11',
-    images: [skillSwaprBlack, skillSwaprWhite],
+    images: [skillSwaprWhite, skillSwaprBlack],
     description:
       'Skill-Swapr is your all-in-one platform for job postings, requests, and bids, resembling a streamlined Fiverr. Effortlessly connect with a diverse talent pool, post or bid on jobs, and immerse yourself in a world of seamless skill exchange. Unlock opportunities and foster collaboration on our dynamic and user-friendly platform.',
     technologies: [
@@ -84,7 +84,7 @@ const projects = [
     liveLink: 'https://tech-innovate-hub.web.app/',
     GithubLink: 'https://github.com/mahfuj80/tech-innovate-hub-a10-client',
     serverLink: 'https://github.com/mahfuj80/tech-innovate-hub-a10-server',
-    images: [techInnovateHubBlack, techInnovateHubWhite],
+    images: [techInnovateHubWhite, techInnovateHubBlack],
     description:
       'Welcome to Tech Innovate Hub! Seamlessly add and manage products by brand with our user-friendly interface. Explore simple CRUD operations, effortlessly customize your cart, and experience the convenience of tech innovation.',
     technologies: [

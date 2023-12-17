@@ -107,25 +107,31 @@ const Contact = () => {
         </p>
         <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
           <a
-            href="#"
+            href="https://www.facebook.com/mahfujurrahman06627/"
             className="w-full sm:w-auto bg-gray-300 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 text-4xl text-blue-600"
           >
             <FaFacebook></FaFacebook>
           </a>
           <a
-            href="#"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/mahfuj80"
             className="w-full sm:w-auto bg-gray-300 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 text-4xl text-black hover:text-white"
           >
             <FaGithub></FaGithub>
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/mahfujur-rahman-632590202/"
+            target="_blank"
+            rel="noreferrer"
             className="w-full sm:w-auto bg-gray-300 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 text-4xl text-blue-600"
           >
             <FaLinkedinIn></FaLinkedinIn>
           </a>
           <a
-            href="#"
+            href="https://twitter.com/Mahfuj_A_A_"
+            target="_blank"
+            rel="noreferrer"
             className="w-full sm:w-auto bg-gray-300 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 text-4xl text-blue-600"
           >
             <FaTwitter></FaTwitter>
