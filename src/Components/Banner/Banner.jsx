@@ -57,7 +57,10 @@ const Banner = () => {
         </div>
       </div>
       {/* Stats */}
-      <div className="flex flex-col md:flex-row gap-4 justify-center bg-gray-700 py-4 md:w-[70%] mx-auto px-4 rounded-lg -mt-12 items-center">
+      <div
+        className="flex flex-col md:flex-row gap-4 justify-center bg-gray-700 py-4 md:w-[70
+        %] mx-auto px-4 rounded-lg -mt-12 items-center"
+      >
         <div className="h-[150px] w-[250px] flex flex-col justify-center items-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 z-10">
           <p className="text-7xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
             8+
