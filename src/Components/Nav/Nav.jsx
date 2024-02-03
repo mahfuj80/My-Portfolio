@@ -58,7 +58,10 @@ const Nav = () => {
             type="button"
             className="btn text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-600  hover:to-green-500"
           >
-            <a href="/logo.png" download="Mahfujur_Rahman_Resume">
+            <a
+              href="/Mahfujur_Rahman_Resume.pdf"
+              download="Mahfujur_Rahman_Resume"
+            >
               Download Resume
             </a>
           </button>
