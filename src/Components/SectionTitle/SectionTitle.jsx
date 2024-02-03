@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-const SectionTitle = ({ title, border }) => {
+const SectionTitle = ({ sectionId, title, border }) => {
   return (
-    <div>
+    <div id={sectionId}>
       <p className="text-4xl font-black text-gray-900 dark:text-white text-center pt-4 bg-gradient-to-r from-cyan-400 to-blue-800 text-transparent bg-clip-text">
         {title}
       </p>

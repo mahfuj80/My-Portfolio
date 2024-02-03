@@ -5,13 +5,13 @@ const Nav = () => {
   const navItems = (
     <>
       <li className="mr-2 font-bold text-base">
-        <Link to={'#projects font-bold'}>Projects</Link>
+        <Link to={'#projects'}>Projects</Link>
       </li>
       <li className="mr-2 font-bold text-base">
-        <Link to={'#contact'}>Skills</Link>
+        <Link to={'#skills'}>Skills</Link>
       </li>
       <li className="font-bold text-base">
-        <Link to={''}>Contact</Link>
+        <Link to={'#contact'}>Contact</Link>
       </li>
     </>
   );

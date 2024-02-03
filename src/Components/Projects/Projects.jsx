@@ -7,6 +7,7 @@ const Projects = () => {
   return (
     <>
       <SectionTitle
+        sectionId={'projects'}
         title={'My Projects'}
         border={'----------------------------'}
       ></SectionTitle>

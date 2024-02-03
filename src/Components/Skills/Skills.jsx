@@ -5,7 +5,11 @@ const Skills = () => {
   console.log(skills);
   return (
     <>
-      <SectionTitle title={'Skills'} border={'---------------'}></SectionTitle>
+      <SectionTitle
+        sectionId={'skills'}
+        title={'Skills'}
+        border={'---------------'}
+      ></SectionTitle>
       <section className="px-4 bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-gray-600  rounded-lg py-6 mb-12">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
           {skills?.map((skill) => (
