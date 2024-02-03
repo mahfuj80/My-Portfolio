@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Profile from '../../assets/MahfujurRahman.png';
 import { FaReact, FaNodeJs } from 'react-icons/fa6';
 import { SiTailwindcss, SiMongodb } from 'react-icons/si';
