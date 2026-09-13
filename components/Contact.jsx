@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Lottie from "lottie-react";
+import { Lottie } from "lottie-react";
 import SectionTitle from "./SectionTitle";
 import contactAnimation from "@/src/assets/contactAnimation.json";
 import { FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
