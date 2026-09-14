@@ -89,7 +89,7 @@ export default function Contact() {
           <div className="w-full lg:w-1/2 flex justify-center items-center max-w-md">
             {mounted && (
               <Lottie
-                animationData={contactAnimation}
+                src={contactAnimation}
                 loop={true}
                 className="w-full max-h-96"
               />
