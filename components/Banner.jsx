@@ -1,171 +1,174 @@
 import Image from "next/image";
 import Profile from "@/src/assets/MahfujurRahman.png";
-import { FaReact, FaNodeJs } from "react-icons/fa6";
-import { SiTailwindcss, SiMongodb } from "react-icons/si";
+import { FaReact, FaNodeJs, FaArrowRight } from "react-icons/fa6";
+import { SiTailwindcss, SiMongodb, SiNextdotjs, SiExpress } from "react-icons/si";
 
 export default function Banner() {
+  const techStack = [
+    { icon: <FaReact />, name: "React", color: "hover:text-cyan-400 hover:border-cyan-400/40" },
+    { icon: <SiNextdotjs />, name: "Next.js", color: "hover:text-zinc-100 hover:border-zinc-100/40" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "hover:text-sky-400 hover:border-sky-400/40" },
+    { icon: <FaNodeJs />, name: "Node.js", color: "hover:text-green-500 hover:border-green-500/40" },
+    { icon: <SiMongodb />, name: "MongoDB", color: "hover:text-emerald-500 hover:border-emerald-500/40" },
+    { icon: <SiExpress />, name: "Express.js", color: "hover:text-zinc-300 hover:border-zinc-300/40" },
+  ];
+
+  const stats = [
+    {
+      value: "15+",
+      label: "Projects Built",
+      subtext: "Full-Stack & Frontend",
+      href: "#projects",
+    },
+    {
+      value: "4+",
+      label: "Years Experience",
+      subtext: "CSE & Web Development",
+      href: "#about",
+    },
+    {
+      value: "100%",
+      label: "Modern Stack",
+      subtext: "React 19 & Next.js 16",
+      href: "#skills",
+    },
+  ];
+
   return (
-    <section className="relative px-4 rounded-2xl mb-16 overflow-hidden">
-      {/* Hero Background */}
-      <div
-        className="relative min-h-[75vh] flex items-center justify-center rounded-2xl overflow-hidden bg-cover bg-center"
-        style={{
-          backgroundImage: "url(/Banner-bg.gif)",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/75 dark:bg-black/85 backdrop-blur-[2px]"></div>
+    <section className="relative px-2 sm:px-4 rounded-3xl mb-16 overflow-hidden">
+      {/* Ambient background container (Zero heavy GIF, ultra-fast CSS glow) */}
+      <div className="relative min-h-[78vh] flex items-center justify-center rounded-3xl overflow-hidden border border-zinc-200/80 dark:border-white/10 bg-gradient-to-b from-white via-cyan-50/20 to-white dark:from-zinc-950 dark:via-[#090e1a] dark:to-zinc-950 shadow-2xl p-6 sm:p-10 lg:p-14">
+        {/* Glow Orbs */}
+        <div className="absolute -top-32 -left-32 w-96 h-96 bg-cyan-500/20 dark:bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 -right-32 w-96 h-96 bg-blue-600/20 dark:bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-32 left-1/3 w-80 h-80 bg-indigo-500/15 dark:bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 container mx-auto px-4 py-16 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
-          {/* Left Text */}
-          <div className="md:w-1/2 w-full text-center md:text-left space-y-6">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 text-transparent bg-clip-text">
-              Mahfujur Rahman
-            </h1>
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none" />
 
-            <p className="text-lg sm:text-xl font-medium leading-relaxed italic bg-gradient-to-r from-indigo-300 via-sky-300 to-emerald-300 text-transparent bg-clip-text max-w-xl mx-auto md:mx-0">
-              Passionate React Developer with a solid foundation in Computer
-              Science and Engineering, honed through dedicated studies at
-              Kushtia Polytechnic Institute.
+        <div className="relative z-10 w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+          {/* Left Text Column */}
+          <div className="w-full lg:w-3/5 text-center lg:text-left space-y-6">
+            {/* Status Pill */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 dark:bg-emerald-400/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 shadow-sm backdrop-blur-md">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+              </span>
+              <span>Available for Opportunities & Freelance</span>
+            </div>
+
+            {/* Main Headline */}
+            <div className="space-y-2">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-zinc-900 dark:text-white leading-[1.15]">
+                Hi, I&apos;m{" "}
+                <span className="bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 dark:from-cyan-400 dark:via-sky-400 dark:to-blue-500 text-transparent bg-clip-text">
+                  Mahfujur Rahman
+                </span>
+              </h1>
+              <p className="text-xl sm:text-2xl font-bold text-zinc-700 dark:text-zinc-200">
+                Full-Stack &amp; Frontend React Developer
+              </p>
+            </div>
+
+            {/* Description */}
+            <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              Crafting interactive, high-performance web applications with a solid foundation in Computer Science &amp; Engineering from Kushtia Polytechnic Institute. Specializing in modern React, Next.js, and clean architecture.
             </p>
 
-            <div className="pt-2">
+            {/* Action CTAs */}
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start items-center pt-2">
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              >
+                <span>Explore Projects</span>
+                <FaArrowRight className="text-xs group-hover:translate-x-1 transition-transform" />
+              </a>
+
               <a
                 href="#contact"
-                className="inline-block px-8 py-3 text-base font-semibold text-white bg-gradient-to-r from-green-400 via-teal-500 to-blue-500 hover:from-blue-600 hover:to-green-500 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center gap-2 px-7 py-3.5 text-sm sm:text-base font-semibold text-zinc-800 dark:text-zinc-200 bg-white/80 dark:bg-zinc-900/80 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-700/80 rounded-xl shadow-sm transition-all transform hover:-translate-y-0.5"
               >
-                Contact Me
+                Get In Touch
               </a>
             </div>
 
-            {/* Tech Stack Icons */}
-            <div className="flex gap-6 justify-center md:justify-start items-center pt-4">
-              <div
-                title="React"
-                className="text-4xl sm:text-5xl text-cyan-400 hover:scale-110 transition-transform cursor-pointer drop-shadow"
-              >
-                <FaReact />
-              </div>
-              <div
-                title="Tailwind CSS"
-                className="text-4xl sm:text-5xl text-sky-400 hover:scale-110 transition-transform cursor-pointer drop-shadow"
-              >
-                <SiTailwindcss />
-              </div>
-              <div
-                title="MongoDB"
-                className="text-4xl sm:text-5xl text-emerald-400 hover:scale-110 transition-transform cursor-pointer drop-shadow"
-              >
-                <SiMongodb />
-              </div>
-              <div
-                title="Node.js"
-                className="text-4xl sm:text-5xl text-green-500 hover:scale-110 transition-transform cursor-pointer drop-shadow"
-              >
-                <FaNodeJs />
+            {/* Tech Stack Chips */}
+            <div className="pt-4 border-t border-zinc-200/60 dark:border-zinc-800/60">
+              <p className="text-xs uppercase font-bold tracking-wider text-zinc-500 dark:text-zinc-400 mb-3">
+                Core Tech Arsenal
+              </p>
+              <div className="flex flex-wrap gap-2.5 justify-center lg:justify-start">
+                {techStack.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium bg-white/70 dark:bg-zinc-900/70 text-zinc-700 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-800 shadow-sm backdrop-blur transition-all duration-200 ${tech.color}`}
+                  >
+                    <span className="text-base">{tech.icon}</span>
+                    <span>{tech.name}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Right Profile Image */}
-          <div className="md:w-1/2 w-full flex justify-center">
-            <div className="relative p-2 rounded-3xl bg-gradient-to-tr from-cyan-500 via-blue-500 to-emerald-400 shadow-2xl">
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden bg-zinc-900">
-                <Image
-                  src={Profile}
-                  alt="Mahfujur Rahman"
-                  fill
-                  priority
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
+          {/* Right Profile Column */}
+          <div className="w-full lg:w-2/5 flex justify-center">
+            <div className="relative group">
+              {/* Outer decorative glowing ring */}
+              <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-500 opacity-60 group-hover:opacity-100 blur-lg transition duration-500" />
+
+              <div className="relative p-2 rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-white/10 shadow-2xl">
+                <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden bg-zinc-900">
+                  <Image
+                    src={Profile}
+                    alt="Mahfujur Rahman"
+                    fill
+                    priority
+                    className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                  {/* Subtle inner shadow overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 via-transparent to-transparent pointer-events-none" />
+
+                  {/* Badge floating on photo */}
+                  <div className="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-zinc-900/80 backdrop-blur-md border border-white/10 text-white text-xs flex items-center justify-between">
+                    <div>
+                      <p className="font-bold text-cyan-400">Mahfujur Rahman</p>
+                      <p className="text-[11px] text-zinc-300">Frontend &amp; Full-Stack</p>
+                    </div>
+                    <span className="px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 font-mono text-[10px] border border-cyan-500/30">
+                      CSE Grad
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Quick Stats Banner */}
-      <div className="relative z-20 flex flex-col md:flex-row gap-6 justify-center items-center -mt-10 max-w-4xl mx-auto px-4">
-        {/* Card 1 */}
-        <div className="h-36 w-64 flex flex-col justify-center items-center bg-white/95 dark:bg-zinc-900/95 backdrop-blur border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
-          <p className="text-5xl font-black bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
-            8+
-          </p>
+      {/* Modern Bento Stats Strip */}
+      <div className="relative z-20 grid grid-cols-1 sm:grid-cols-3 gap-4 -mt-8 max-w-5xl mx-auto px-4">
+        {stats.map((stat) => (
           <a
-            href="#projects"
-            className="mt-2 flex items-center gap-1.5 text-blue-600 dark:text-cyan-400 font-semibold hover:underline group"
+            key={stat.label}
+            href={stat.href}
+            className="flex items-center gap-4 p-5 rounded-2xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-xl border border-zinc-200/80 dark:border-zinc-800 shadow-lg hover:shadow-xl hover:border-cyan-500/40 transition-all duration-300 hover:-translate-y-1 group"
           >
-            <span>Projects</span>
-            <svg
-              className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
+            <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-cyan-500/10 dark:bg-cyan-400/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 group-hover:scale-105 transition-transform">
+              <span className="text-2xl font-black font-mono">{stat.value}</span>
+            </div>
+            <div>
+              <p className="font-bold text-sm text-zinc-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+                {stat.label}
+              </p>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                {stat.subtext}
+              </p>
+            </div>
           </a>
-        </div>
-
-        {/* Card 2 */}
-        <div className="h-36 w-64 flex flex-col justify-center items-center bg-white/95 dark:bg-zinc-900/95 backdrop-blur border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
-          <p className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
-            Resume
-          </p>
-          <a
-            href="/Mahfujur_Rahman_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 flex items-center gap-1.5 text-blue-600 dark:text-cyan-400 font-semibold hover:underline group"
-          >
-            <span>View Resume</span>
-            <svg
-              className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </a>
-        </div>
-
-        {/* Card 3 */}
-        <div className="h-36 w-64 flex flex-col justify-center items-center bg-white/95 dark:bg-zinc-900/95 backdrop-blur border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
-          <p className="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center px-2">
-            Current Project
-          </p>
-          <a
-            href="https://fitness-tracker-a12.web.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 flex items-center gap-1.5 text-blue-600 dark:text-cyan-400 font-semibold hover:underline group"
-          >
-            <span>View Project</span>
-            <svg
-              className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </a>
-        </div>
+        ))}
       </div>
     </section>
   );
