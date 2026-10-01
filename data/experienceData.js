@@ -2,7 +2,7 @@ const experience = [
   {
     id: 1,
     role: "Full Stack Developer",
-    company: "Betopia Group",
+    company: "Linkware Solutions BD Ltd.",
     period: "Oct 2025 – Present",
     location: "Dhaka, Bangladesh",
     current: true,

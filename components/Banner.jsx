@@ -28,7 +28,7 @@ export default function Banner() {
     {
       value: "3+",
       label: "Years Industry Experience",
-      subtext: "Betopia · NEXSTACK · Lyricz",
+      subtext: "Linkware · NEXSTACK · Lyricz",
       href: "#experience",
     },
     {
@@ -150,7 +150,7 @@ export default function Banner() {
                       <p className="text-[11px] text-zinc-300">Full-Stack &amp; Systems Architect</p>
                     </div>
                     <span className="shrink-0 whitespace-nowrap px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 font-mono text-[10px] border border-cyan-500/30">
-                      @ Betopia
+                      @ Linkware
                     </span>
                   </div>
                 </div>
