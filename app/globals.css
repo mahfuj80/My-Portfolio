@@ -9,15 +9,11 @@ html {
 :root {
   --background: #f8fafc;
   --foreground: #0f172a;
-  --card-bg: rgba(255, 255, 255, 0.85);
-  --card-border: rgba(226, 232, 240, 0.8);
 }
 
 .dark {
   --background: #080c14;
   --foreground: #f1f5f9;
-  --card-bg: rgba(15, 23, 42, 0.7);
-  --card-border: rgba(255, 255, 255, 0.08);
 }
 
 @theme inline {
@@ -63,24 +59,6 @@ body {
   background-size: 28px 28px;
 }
 
-/* Glassmorphic card styling */
-.glass-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-
-.glass-card-hover {
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.glass-card-hover:hover {
-  transform: translateY(-3px);
-  border-color: rgba(56, 189, 248, 0.3);
-  box-shadow: 0 16px 32px -8px rgba(14, 165, 233, 0.12);
-}
-
 /* Rotating hero tagline */
 @keyframes fade-up {
   from {
@@ -101,12 +79,4 @@ body {
   .animate-fade-up {
     animation: none;
   }
-}
-
-.project-screen-img {
-  transition: object-position 6s ease-in-out;
-}
-
-.project-screen:hover .project-screen-img {
-  object-position: bottom center !important;
 }

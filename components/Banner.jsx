@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Profile from "@/src/assets/MahfujurRahman.png";
+import Profile from "@/src/assets/icons/MahfujurRahman.png";
 import RotatingRole from "./RotatingRole";
 import { FaArrowRight, FaAws } from "react-icons/fa6";
 import {

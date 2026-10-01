@@ -1,8 +1,5 @@
 import fitnessTrackerBlack from '@/src/assets/Projects/fitnessTrackerBlack.png';
-import fitnessTrackerWhite from '@/src/assets/Projects/fitnessTrackerWhite.png';
-import skillSwaprBlack from '@/src/assets/Projects/skillSwaprBlack.png';
 import skillSwaprWhite from '@/src/assets/Projects/skillSwaprWhite.png';
-import techInnovateHubBlack from '@/src/assets/Projects/techInnovateHubBlack.png';
 import techInnovateHubWhite from '@/src/assets/Projects/techInnovateHubWhite.png';
 import eventManagement from '@/src/assets/Projects/eventManagement.png';
 
@@ -23,7 +20,7 @@ const projects = [
     liveLink: "https://fitness-tracker-a12.web.app/",
     GithubLink: "https://github.com/mahfuj80/Fitness-Tracker-Client-A12",
     serverLink: "https://github.com/mahfuj80/Fitness-Tracker-Server-A12",
-    images: [fitnessTrackerBlack, fitnessTrackerWhite],
+    images: [fitnessTrackerBlack],
     description:
       "A complete gym and health portal featuring role-based dashboards (Admin, Trainer, Member), Stripe payment integration, personalized training session booking, forums, and community wellness blogs.",
     highlights: [
@@ -48,7 +45,7 @@ const projects = [
     liveLink: "https://skillswapr-a11.web.app/",
     GithubLink: "https://github.com/mahfuj80/SkillSwapr-client-a11",
     serverLink: "https://github.com/mahfuj80/SkillSwapr-server-a11",
-    images: [skillSwaprWhite, skillSwaprBlack],
+    images: [skillSwaprWhite],
     description:
       "Streamlined gig and freelance marketplace connecting buyers and service providers. Enables user job postings, real-time bid evaluations, project deadlines, and status workflow management.",
     highlights: [
@@ -73,7 +70,7 @@ const projects = [
     liveLink: "https://tech-innovate-hub.web.app/",
     GithubLink: "https://github.com/mahfuj80/tech-innovate-hub-a10-client",
     serverLink: "https://github.com/mahfuj80/tech-innovate-hub-a10-server",
-    images: [techInnovateHubWhite, techInnovateHubBlack],
+    images: [techInnovateHubWhite],
     description:
       "Modern electronics and tech gadget store with multi-brand inventory management, real-time cart synchronization, and complete CRUD product lifecycle handling.",
     highlights: [
