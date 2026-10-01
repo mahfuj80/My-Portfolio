@@ -10,6 +10,7 @@ export default function Nav() {
 
   const navLinks = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
@@ -73,7 +74,7 @@ export default function Nav() {
             <a
               key={link.name}
               href={link.href}
-              className="px-3.5 py-1.5 rounded-lg text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-cyan-600 dark:hover:text-cyan-300 hover:bg-white dark:hover:bg-zinc-800/80 transition-all"
+              className="px-2.5 lg:px-3.5 py-1.5 rounded-lg text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-cyan-600 dark:hover:text-cyan-300 hover:bg-white dark:hover:bg-zinc-800/80 transition-all"
             >
               {link.name}
             </a>

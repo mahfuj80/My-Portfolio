@@ -12,17 +12,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mahfujur Rahman | Full-Stack & React Developer Portfolio",
+  title: "Mahfujur Rahman | Full-Stack Software Engineer & Systems Architect",
   description:
-    "Portfolio of Mahfujur Rahman — Passionate Full-Stack & Frontend React Developer specializing in Next.js, React, Node.js, and modern high-performance web applications.",
+    "Portfolio of Md. Mahfujur Rahman — Full-Stack Software Engineer & Systems Architect in Dhaka, building high-availability platforms with NestJS, Next.js, PostgreSQL, Docker, Nginx, and AWS, plus multi-tenant SaaS, crypto & fiat billing engines, and AI/RAG automation.",
   keywords: [
     "Mahfujur Rahman",
-    "React Developer",
+    "Full-Stack Software Engineer",
+    "Systems Architect",
+    "NestJS Developer",
     "Next.js Developer",
-    "Frontend Developer",
-    "Full-Stack Developer",
-    "Web Developer Portfolio",
-    "MERN Stack",
+    "Backend Engineer",
+    "DevOps",
+    "Multi-Tenant SaaS",
+    "Payment Gateway Integration",
+    "Tauri",
+    "Dhaka Bangladesh",
   ],
   authors: [{ name: "Mahfujur Rahman" }],
   creator: "Mahfujur Rahman",
@@ -30,9 +34,9 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mahfuj80.github.io/My-Portfolio/",
-    title: "Mahfujur Rahman | Full-Stack & React Developer Portfolio",
+    title: "Mahfujur Rahman | Full-Stack Software Engineer & Systems Architect",
     description:
-      "Explore modern web applications, full-stack projects, and technical skills by Mahfujur Rahman.",
+      "High-availability web platforms, enterprise microservices, cross-platform apps, and cloud infrastructure by Mahfujur Rahman.",
     siteName: "Mahfujur Rahman Portfolio",
   },
   icons: {

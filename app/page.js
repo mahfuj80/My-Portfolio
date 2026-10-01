@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Banner from "@/components/Banner";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="container mx-auto px-2 sm:px-4 pt-24 flex-grow max-w-7xl">
         <Banner />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Contact />

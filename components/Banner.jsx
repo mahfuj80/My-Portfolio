@@ -1,35 +1,46 @@
 import Image from "next/image";
 import Profile from "@/src/assets/MahfujurRahman.png";
-import { FaReact, FaNodeJs, FaArrowRight } from "react-icons/fa6";
-import { SiTailwindcss, SiMongodb, SiNextdotjs, SiExpress } from "react-icons/si";
+import RotatingRole from "./RotatingRole";
+import { FaArrowRight, FaAws } from "react-icons/fa6";
+import {
+  SiNestjs,
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiDocker,
+  SiNginx,
+  SiTauri,
+} from "react-icons/si";
 
 export default function Banner() {
   const techStack = [
-    { icon: <FaReact />, name: "React", color: "hover:text-cyan-400 hover:border-cyan-400/40" },
-    { icon: <SiNextdotjs />, name: "Next.js", color: "hover:text-zinc-100 hover:border-zinc-100/40" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "hover:text-sky-400 hover:border-sky-400/40" },
-    { icon: <FaNodeJs />, name: "Node.js", color: "hover:text-green-500 hover:border-green-500/40" },
-    { icon: <SiMongodb />, name: "MongoDB", color: "hover:text-emerald-500 hover:border-emerald-500/40" },
-    { icon: <SiExpress />, name: "Express.js", color: "hover:text-zinc-300 hover:border-zinc-300/40" },
+    { icon: <SiNestjs />, name: "NestJS", color: "hover:text-rose-500 hover:border-rose-500/40" },
+    { icon: <SiNextdotjs />, name: "Next.js", color: "hover:text-zinc-950 dark:hover:text-zinc-100 hover:border-zinc-500/40" },
+    { icon: <SiTypescript />, name: "TypeScript", color: "hover:text-blue-500 hover:border-blue-500/40" },
+    { icon: <SiPostgresql />, name: "PostgreSQL", color: "hover:text-sky-600 hover:border-sky-600/40" },
+    { icon: <SiDocker />, name: "Docker", color: "hover:text-sky-500 hover:border-sky-500/40" },
+    { icon: <SiNginx />, name: "Nginx", color: "hover:text-green-600 hover:border-green-600/40" },
+    { icon: <FaAws />, name: "AWS", color: "hover:text-amber-500 hover:border-amber-500/40" },
+    { icon: <SiTauri />, name: "Tauri", color: "hover:text-yellow-500 hover:border-yellow-500/40" },
   ];
 
   const stats = [
     {
+      value: "3+",
+      label: "Years Industry Experience",
+      subtext: "Betopia · NEXSTACK · Lyricz",
+      href: "#experience",
+    },
+    {
       value: "15+",
-      label: "Projects Built",
-      subtext: "Full-Stack & Frontend",
+      label: "Projects Shipped",
+      subtext: "SaaS, Billing & Web Platforms",
       href: "#projects",
     },
     {
-      value: "4+",
-      label: "Years Experience",
-      subtext: "CSE & Web Development",
-      href: "#about",
-    },
-    {
-      value: "100%",
-      label: "Modern Stack",
-      subtext: "React 19 & Next.js 16",
+      value: "3",
+      label: "Platforms Covered",
+      subtext: "Web · Desktop · Mobile",
       href: "#skills",
     },
   ];
@@ -67,13 +78,14 @@ export default function Banner() {
                 </span>
               </h1>
               <p className="text-xl sm:text-2xl font-bold text-zinc-700 dark:text-zinc-200">
-                Full-Stack &amp; Frontend React Developer
+                Full-Stack Software Engineer &amp; Systems Architect
               </p>
+              <RotatingRole />
             </div>
 
             {/* Description */}
             <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Crafting interactive, high-performance web applications with a solid foundation in Computer Science &amp; Engineering from Kushtia Polytechnic Institute. Specializing in modern React, Next.js, and clean architecture.
+              Designing high-availability web platforms, enterprise microservices, and distributed cloud systems. From NestJS &amp; PostgreSQL backends to load-balanced Linux infrastructure, multi-gateway billing engines, and AI/RAG automation, I take ownership from architecture to zero-downtime production.
             </p>
 
             {/* Action CTAs */}
@@ -135,10 +147,10 @@ export default function Banner() {
                   <div className="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-zinc-900/80 backdrop-blur-md border border-white/10 text-white text-xs flex items-center justify-between">
                     <div>
                       <p className="font-bold text-cyan-400">Mahfujur Rahman</p>
-                      <p className="text-[11px] text-zinc-300">Frontend &amp; Full-Stack</p>
+                      <p className="text-[11px] text-zinc-300">Full-Stack &amp; Systems Architect</p>
                     </div>
-                    <span className="px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 font-mono text-[10px] border border-cyan-500/30">
-                      CSE Grad
+                    <span className="shrink-0 whitespace-nowrap px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 font-mono text-[10px] border border-cyan-500/30">
+                      @ Betopia
                     </span>
                   </div>
                 </div>

@@ -13,6 +13,9 @@ import {
   FaCheck,
   FaCopy,
   FaPaperPlane,
+  FaDev,
+  FaMedium,
+  FaStackOverflow,
 } from "react-icons/fa";
 
 export default function Contact() {
@@ -165,7 +168,7 @@ export default function Contact() {
               Location &amp; Status
             </p>
             <p className="text-sm font-bold text-zinc-900 dark:text-white">
-              Kushtia, Bangladesh
+              Dhaka, Bangladesh
             </p>
             <p className="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">
               Open to Remote &amp; Onsite
@@ -296,7 +299,7 @@ export default function Contact() {
             Also find me on social platforms:
           </p>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href="https://github.com/mahfuj80"
               target="_blank"
@@ -335,6 +338,36 @@ export default function Contact() {
               className="p-3 rounded-xl bg-white dark:bg-zinc-800 text-blue-600 hover:scale-110 shadow-sm transition-all text-xl"
             >
               <FaFacebook />
+            </a>
+
+            <a
+              href="https://dev.to/mahfujurrahman"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Dev.to"
+              className="p-3 rounded-xl bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 hover:scale-110 shadow-sm transition-all text-xl"
+            >
+              <FaDev />
+            </a>
+
+            <a
+              href="https://medium.com/@mahfujurrahman06627"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Medium"
+              className="p-3 rounded-xl bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 hover:scale-110 shadow-sm transition-all text-xl"
+            >
+              <FaMedium />
+            </a>
+
+            <a
+              href="https://stackoverflow.com/users/19129869/mahfujur-rahman"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Stack Overflow"
+              className="p-3 rounded-xl bg-white dark:bg-zinc-800 text-orange-500 hover:scale-110 shadow-sm transition-all text-xl"
+            >
+              <FaStackOverflow />
             </a>
           </div>
         </div>

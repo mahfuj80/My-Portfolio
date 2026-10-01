@@ -4,7 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import projects from "@/data/projectsData";
-import { FaExternalLinkAlt, FaGithub, FaCheckCircle } from "react-icons/fa";
+import highlights from "@/data/highlightsData";
+import { FaExternalLinkAlt, FaGithub, FaCheckCircle, FaLock } from "react-icons/fa";
 
 export default function Projects() {
   const [filter, setFilter] = useState("all");
@@ -25,9 +26,68 @@ export default function Projects() {
       <SectionTitle
         sectionId="projects-title"
         badge="✦ CASE STUDIES"
-        title="Featured Projects & Platforms"
-        subtitle="End-to-end full-stack applications and interactive frontends built with performance, security, and aesthetics in mind."
+        title="Featured Work & Platforms"
+        subtitle="Production systems architected at scale, alongside open-source full-stack builds you can explore live."
       />
+
+      {/* Production architecture highlights (proprietary work, no public links) */}
+      <div className="mb-16">
+        <div className="flex items-center gap-3 mb-6">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
+            Production Architecture Highlights
+          </h3>
+          <div className="flex-1 h-px bg-zinc-200 dark:bg-zinc-800" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {highlights.map((item) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={item.id}
+                className="relative flex flex-col p-6 rounded-2xl bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border border-zinc-200/80 dark:border-zinc-800 shadow-sm hover:shadow-xl hover:border-cyan-500/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden group"
+              >
+                <div className="absolute -top-16 -right-16 w-40 h-40 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none" />
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/25 group-hover:scale-110 transition-transform">
+                    <Icon className="text-xl" />
+                  </div>
+                  <span
+                    className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold uppercase tracking-wider bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700"
+                    title="Proprietary client work: source and demo are not public"
+                  >
+                    <FaLock className="text-[9px]" />
+                    Proprietary
+                  </span>
+                </div>
+                <h4 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors mb-2">
+                  {item.title}
+                </h4>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed flex-1">
+                  {item.description}
+                </p>
+                <div className="flex flex-wrap gap-1.5 mt-4">
+                  {item.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2.5 py-1 rounded-md text-[11px] font-semibold font-mono bg-cyan-500/10 text-cyan-700 dark:text-cyan-300 border border-cyan-500/20"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="flex items-center gap-3 mb-6">
+        <h3 className="text-sm font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
+          Open-Source Builds
+        </h3>
+        <div className="flex-1 h-px bg-zinc-200 dark:bg-zinc-800" />
+      </div>
 
       {/* Filter Tabs */}
       <div className="flex flex-wrap items-center justify-center gap-2 mb-10">

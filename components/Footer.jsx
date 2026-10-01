@@ -17,7 +17,7 @@ export default function Footer() {
                 Mahfujur Rahman
               </span>
               <span className="text-xs text-cyan-600 dark:text-cyan-400 font-medium">
-                Full-Stack &amp; React Developer
+                Full-Stack Engineer &amp; Systems Architect
               </span>
             </div>
           </Link>
@@ -26,6 +26,11 @@ export default function Footer() {
             <li>
               <a href="#about" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                 About
+              </a>
+            </li>
+            <li>
+              <a href="#experience" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                Experience
               </a>
             </li>
             <li>
