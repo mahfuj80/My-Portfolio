@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -54,6 +55,19 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning className="flex flex-col min-h-full bg-[#f8fafc] text-[#0f172a] dark:bg-[#080c14] dark:text-[#f1f5f9] relative selection:bg-cyan-500 selection:text-white">
         {children}
       </body>
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-09Z2W198MD"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-09Z2W198MD');
+        `}
+      </Script>
     </html>
   );
 }
