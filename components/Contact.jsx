@@ -22,9 +22,8 @@ import {
   FaLock,
 } from "react-icons/fa";
 
-// Served by the `contact` Cloud Function through the Firebase Hosting rewrite
-// in firebase.json. The recipient address lives only in Secret Manager.
-const CONTACT_ENDPOINT = "/api/contact";
+// Using Web3Forms for serverless form submissions
+const WEB3FORMS_ACCESS_KEY = "7c4346cf-7166-4bcb-8718-7950130df288";
 
 const LIMITS = { name: 100, email: 254, subject: 150, message: 5000 };
 const MIN_MESSAGE_LENGTH = 10;
@@ -131,18 +130,25 @@ export default function Contact() {
     setServerError("");
 
     try {
-      const res = await fetch(CONTACT_ENDPOINT, {
+      const formData = new FormData();
+      formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+      formData.append("name", form.name);
+      formData.append("email", form.email);
+      if (form.subject) formData.append("subject", form.subject);
+      formData.append("message", form.message);
+
+      // Web3forms specific honeypot
+      if (honeypot.current?.checked) {
+        formData.append("botcheck", "true");
+      }
+
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...form,
-          hp_field: honeypot.current?.value || "",
-          elapsedMs: Date.now() - mountedAt.current,
-        }),
+        body: formData,
       });
       const data = await res.json().catch(() => ({}));
-      if (!res.ok || !data.ok) {
-        throw new Error(data.error || "Something went wrong. Please try again.");
+      if (!res.ok || !data.success) {
+        throw new Error(data.message || "Something went wrong. Please try again.");
       }
       setSentName(form.name.trim().split(/\s+/)[0]);
       setForm(emptyForm);
@@ -346,12 +352,10 @@ export default function Contact() {
                   <label htmlFor="hp_field">Leave this field empty</label>
                   <input
                     ref={honeypot}
-                    id="hp_field"
-                    name="hp_field"
-                    type="text"
-                    tabIndex={-1}
-                    autoComplete="off"
-                    defaultValue=""
+                    type="checkbox"
+                    name="botcheck"
+                    id=""
+                    style={{ display: "none" }}
                   />
                 </div>
 
