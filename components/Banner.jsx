@@ -77,9 +77,9 @@ export default function Banner() {
                   Mahfujur Rahman
                 </span>
               </h1>
-              <p className="text-xl sm:text-2xl font-bold text-zinc-700 dark:text-zinc-200">
-                Full-Stack Software Engineer &amp; Systems Architect
-              </p>
+              <h2 className="text-xl sm:text-2xl font-bold text-zinc-700 dark:text-zinc-200">
+                Full-Stack Software Engineer, Systems Architect &amp; Backend Developer
+              </h2>
               <RotatingRole />
             </div>
 
@@ -135,9 +135,11 @@ export default function Banner() {
                 <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden bg-zinc-900">
                   <Image
                     src={Profile}
-                    alt="Mahfujur Rahman"
+                    alt="Mahfujur Rahman - Full-Stack Software Engineer, Systems Architect and Backend Developer"
+                    title="Mahfujur Rahman | Full-Stack Software Engineer & Systems Architect"
                     fill
                     priority
+                    sizes="(max-width: 640px) 256px, (max-width: 1024px) 288px, 320px"
                     className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   {/* Subtle inner shadow overlay */}
@@ -147,7 +149,7 @@ export default function Banner() {
                   <div className="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-zinc-900/80 backdrop-blur-md border border-white/10 text-white text-xs flex items-center justify-between">
                     <div>
                       <p className="font-bold text-cyan-400">Mahfujur Rahman</p>
-                      <p className="text-[11px] text-zinc-300">Full-Stack &amp; Systems Architect</p>
+                      <p className="text-[11px] text-zinc-300">Software Engineer &amp; Systems Architect</p>
                     </div>
                     <span className="shrink-0 whitespace-nowrap px-2 py-0.5 rounded-md bg-cyan-500/20 text-cyan-300 font-mono text-[10px] border border-cyan-500/30">
                       @ Linkware
