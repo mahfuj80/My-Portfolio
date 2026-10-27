@@ -179,6 +179,9 @@ const jsonLd = {
       "about": {
         "@id": "https://mahfuj80.github.io/My-Portfolio/#person",
       },
+      "mainEntity": {
+        "@id": "https://mahfuj80.github.io/My-Portfolio/#person",
+      },
       "primaryImageOfPage": {
         "@id": "https://mahfuj80.github.io/My-Portfolio/#image",
       },
